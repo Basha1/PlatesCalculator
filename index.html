@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Plate-Calculator</title>
+  </head>
+  <body>
+    <h1 class="title">Plate Calculator</h1>
+    <div class="container">
+      <div class="bar-details">
+      <label for="input">Target Weight(kg):</label>
+      <input
+        type="number"
+        class="input"
+        id="targetWeight"
+        placeholder="80kg"
+      />
+      <label class="label">Bar Type:</label>
+      <select class="select" id="barType">
+        <option value="20kg">20kg Bar</option>
+        <option value="15kg">15kg Bar</option>
+      </select>  
+     </div>
+      <button class="button" onclick="calculatePlates()">
+        Calculate Plates
+      </button>
+      <div class="result">
+        <h2 class="title">Plates needed:</h2>
+        <ul id="resultList"></ul>
+      </div>
+    </div>
+    <script src="targetWeight.js"></script>
+  </body>
+</html>
