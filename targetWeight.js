@@ -8,7 +8,7 @@ const calculatePlates = () => {
     document.getElementById("targetWeight").value
   );
   const barType = document.getElementById("barType").value;
-
+targetWeight.innerHTML = '';
   // error check if the input is null
   if (isNaN(targetWeight) || targetWeight <= 0) {
     alert("Please enter a valid target weight.");
@@ -46,7 +46,9 @@ const calculatePlates = () => {
     resultList.innerHTML = '';  // Clear previous results
   
     for (const [weight, count] of Object.entries(platesToUse)) {
-      resultList.innerHTML += `<li>${count} plates of ${weight} kg</li>`;
+      resultList.innerHTML += `
+        <li>
+          ${count} plates of ${weight} kg
+        </li>`;
     }
   };
-  

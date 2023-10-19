@@ -115,3 +115,16 @@ input[type="number"] {
   height: 2.2rem;
   width: 8.7rem;
 }
+#resultList li {
+  padding: 10px;
+text-align: center;
+  background: #bbf246;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+  font-style: bold;
+  font-weight: 400;
+  line-height: normal;
+  height: 2.2rem;
+  width: 9.7rem;
+  list-style: none;
+}
